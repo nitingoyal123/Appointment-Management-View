@@ -25,7 +25,109 @@ class StatusEnum(str, Enum):
 
 
 # DATABASE (Mock PostgreSQL)
-appointments = []
+appointments = [
+    {
+        "id": "1",
+        "patientName": "Rakesh Kumar",
+        "date": "2025-01-10",
+        "time": "10:00",
+        "duration": 30,
+        "doctorName": "Dr. Sharma",
+        "status": "Confirmed",
+        "mode": "Offline"
+    },
+    {
+        "id": "2",
+        "patientName": "Priya Mehta",
+        "date": "2025-01-10",
+        "time": "11:00",
+        "duration": 45,
+        "doctorName": "Dr. Sharma",
+        "status": "Upcoming",
+        "mode": "Online"
+    },
+    {
+        "id": "3",
+        "patientName": "Amit Patel",
+        "date": "2025-01-10",
+        "time": "09:30",
+        "duration": 20,
+        "doctorName": "Dr. Verma",
+        "status": "Scheduled",
+        "mode": "Offline"
+    },
+    {
+        "id": "4",
+        "patientName": "Sneha Agarwal",
+        "date": "2025-01-11",
+        "time": "14:00",
+        "duration": 60,
+        "doctorName": "Dr. Sharma",
+        "status": "Confirmed",
+        "mode": "Online"
+    },
+    {
+        "id": "5",
+        "patientName": "Vikas Gupta",
+        "date": "2025-01-11",
+        "time": "16:30",
+        "duration": 30,
+        "doctorName": "Dr. Nair",
+        "status": "Upcoming",
+        "mode": "Offline"
+    },
+    {
+        "id": "6",
+        "patientName": "Neha Singh",
+        "date": "2025-01-12",
+        "time": "13:15",
+        "duration": 40,
+        "doctorName": "Dr. Verma",
+        "status": "Scheduled",
+        "mode": "Online"
+    },
+    {
+        "id": "7",
+        "patientName": "Manish Tiwari",
+        "date": "2025-01-12",
+        "time": "09:00",
+        "duration": 25,
+        "doctorName": "Dr. Sharma",
+        "status": "Confirmed",
+        "mode": "Offline"
+    },
+    {
+        "id": "8",
+        "patientName": "Aarav Joshi",
+        "date": "2025-01-13",
+        "time": "10:45",
+        "duration": 50,
+        "doctorName": "Dr. Nair",
+        "status": "Upcoming",
+        "mode": "Online"
+    },
+    {
+        "id": "9",
+        "patientName": "Divya Kapoor",
+        "date": "2025-01-13",
+        "time": "15:00",
+        "duration": 30,
+        "doctorName": "Dr. Verma",
+        "status": "Scheduled",
+        "mode": "Offline"
+    },
+    {
+        "id": "10",
+        "patientName": "Harshit Jain",
+        "date": "2025-01-14",
+        "time": "12:00",
+        "duration": 45,
+        "doctorName": "Dr. Sharma",
+        "status": "Confirmed",
+        "mode": "Online"
+    }
+]
+
 
 class Appointment(BaseModel):
     patientName: str
