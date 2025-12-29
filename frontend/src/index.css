@@ -1,5 +1,8 @@
 @import "tailwindcss";
 
-.input{
-  @apply w-full p-3 border rounded-xl bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-400;
-}
+.input{ background:#f8f9fc; outline:none; width:100%; }
+.btn-green{ @apply w-full p-2 rounded-lg text-white bg-green-500 hover:bg-green-600; }
+.btn-yellow{ @apply w-full p-2 rounded-lg text-white bg-yellow-500 hover:bg-yellow-600; }
+.btn-red{ @apply w-full p-2 rounded-lg text-white bg-red-500 hover:bg-red-600; }
+@keyframes slideLeft{ from{right:-450px} to{right:0} }
+.animate-slideLeft{ animation:slideLeft .35s ease forwards }
